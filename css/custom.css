@@ -1,0 +1,61 @@
+body {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+  font-weight: 900;
+}
+.thumbnail {
+  cursor: pointer;
+}
+#main {
+  background-color: #239093;
+  color: #fff;
+}
+#contact {
+  background-color: #239093;
+  color: #fff;
+  padding-top: 50px;
+}
+
+label {
+  color: #fff;
+}
+
+i {
+  margin-left: 10px;
+  color: #fff;
+}
+#contact i {
+  margin-top: 3em;
+}
+.resume-btn {
+  padding: 20px;
+  background-color:#1b5052;
+  color: #fff;
+}
+
+#submit {
+  background-color:#1b5052;
+}
+.resume-btn:hover,
+#submit:hover {
+  background-color: #057377;
+}
+.view-resume {
+  color: #fff !important;
+}
+
+.view-resume:hover {
+  text-decoration: underline;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: #d8d8d8;
+  margin-top: 20px;
+}
+.label-txt {
+  float: left;
+}
