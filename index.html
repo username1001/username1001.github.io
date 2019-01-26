@@ -158,18 +158,11 @@
       <h2 class="heading">Projects</h2>
       <div class="container">
         <div class="row">
-          <ul id="lightslider">
-            <li>
-              <img src="./images/metta.png" style="height: 200px" /><a
-                href="https://mettastoic.herokuapp.com"
-                >Visit</a
-              >
-              <p>
-                It's too late right now, so if you're seeing this, please check
-                back later. This will look much, much different, and have many
-                more projects. Thanks! :)
-              </p>
-            </li>
+          <ul id="light-slider">
+            <li><img src="./images/metta.png" style="height: 200px" /></li>
+            <li><img src="./images/hn.png" style="height: 200px" /></li>
+            <li><img src="./images/metta.png" style="height: 200px" /></li>
+            <li><img src="./images/metta.png" style="height: 200px" /></li>
           </ul>
         </div>
       </div>
@@ -293,7 +286,14 @@
     <script src="js/scripts.min.js"></script>
     <script type="text/javascript">
       $(document).ready(function() {
-        $('#lightSlider').lightSlider();
+        $('#light-slider').lightSlider({
+          autoWidth: true,
+          useCSS: true,
+          speed: 400,
+          loop: true,
+          pauseOnHover: true,
+          draggable: false
+        });
       });
     </script>
   </body>
