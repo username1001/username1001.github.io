@@ -12,8 +12,8 @@ const PARAM_HPP = 'hitsPerPage=';
 
 // const url = `${PATH_BASE}${PATH_SEARCH}?${PARAM_SEARCH}${DEFAULT_QUERY}&${PARAM_PAGE}`;
 
-const isSearched = searchTerm => item =>
-  item.title.toLowerCase().includes(searchTerm.toLowerCase());
+// const isSearched = searchTerm => item =>
+//   item.title.toLowerCase().includes(searchTerm.toLowerCase());
 
 class App extends Component {
   constructor(props) {
@@ -72,24 +72,28 @@ class App extends Component {
   }
 
   onDismiss(id) {
+    const { searchKey, results } = this.state;
+    const { hits, page } = results[searchKey];
+
     const isNotId = item => item.objectID !== id;
-    const updatedHits = this.state.result.hits.filter(isNotId);
+    const updatedHits = hits.filter(isNotId);
     this.setState({
-      result: { ...this.state.result, hits: updatedHits }
+      results: {
+        ...results,
+        [searchKey]: { hits: updatedHits, page }
+      }
     });
   }
 
   render() {
-    const { searchTerm, result } = this.state;
-    const page = (result && result.page) || 0;
+    const { searchTerm, results, searchKey } = this.state;
+    const page =
+      (results && results[searchKey] && results[searchKey].page) || 0;
+    const list =
+      (results && results[searchKey] && results[searchKey].hits) || [];
     return (
       <div className="page">
         <div className="interactions">
-          <Button
-            onClick={() => this.fetchSearchTopStories(searchTerm, page + 1)}
-          >
-            More
-          </Button>
           <Search
             value={searchTerm}
             onChange={this.onSearchChange}
@@ -98,7 +102,10 @@ class App extends Component {
             Search
           </Search>
         </div>
-        {result && <Table list={result.hits} onDismiss={this.onDismiss} />}
+        <Table list={list} onDismiss={this.onDismiss} />
+        <Button onClick={() => this.fetchSearchTopStories(searchKey, page + 1)}>
+          More
+        </Button>
       </div>
     );
   }
