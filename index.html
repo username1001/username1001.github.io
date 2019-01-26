@@ -1,136 +1,254 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="no-js" lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Matt's Portfolio | Welcome</title>
-  <link rel="stylesheet" href="./css/foundation.css">
-  <link rel="stylesheet" href="./css/custom.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-<body>
-  <div class="off-canvas-wrapper">
-  <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
-  <div class="off-canvas position-left reveal-for-large" id="my-info" data-off-canvas data-position="left">
-    <div class="row column">
-      <br>
-      <img class="thumbnail" src="./img/davinci.jpeg">
-      <h5>Matt Fay</h5>
-      <p>Living near Scranton, PA, Matt spends a lot of time diving into technology and programming. He's a fan of chess, and likes to work out when he can.</p>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Matt Fay's Portfolio | Welcome</title>
+    <link rel="stylesheet" href="./css/foundation.css" />
+    <link rel="stylesheet" href="./css/custom.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="off-canvas-wrapper">
+      <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+        <div
+          class="off-canvas position-left reveal-for-large"
+          id="my-info"
+          data-off-canvas
+          data-position="left"
+        >
+          <div class="row column">
+            <br />
+            <img class="thumbnail" src="./img/davinci.jpeg" />
+            <h5>Matt Fay</h5>
+            <p>
+              Living near Scranton, PA, Matt spends a lot of time diving into
+              technology and programming. He's a fan of chess, and likes to work
+              out when he can.
+            </p>
+            <p>
+              This portfolio is temporary. I've been spending my time working on
+              other projects.
+            </p>
+          </div>
+        </div>
+        <div class="off-canvas-content" data-off-canvas-content>
+          <div class="title-bar hide-for-large">
+            <div class="title-bar-left">
+              <button
+                class="menu-icon"
+                type="button"
+                data-open="my-info"
+              ></button>
+              <!-- <span class="title-bar-title"></span> -->
+            </div>
+          </div>
+          <div class="callout primary" id="main">
+            <div class="row column">
+              <h1>Matt Fay's Portfolio</h1>
+              <p>Software Developer | Scranton, PA</p>
+              <!-- <p class="lead"></p> -->
+              <a href="https://www.linkedin.com/in/matt-fay" target="_blank">
+                <i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i>
+              </a>
+              <a href="https://www.github.com/username1001" target="_blank">
+                <i class="fa fa-github-square fa-3x" aria-hidden="true"></i>
+              </a>
+              <a href="https://www.codepen.io/username1001" target="_blank">
+                <i class="fa fa-codepen fa-3x" aria-hidden="true"></i>
+              </a>
+              <br /><br />
+              <a href="./assets/Matt_Fay(1).pdf" download="Matt's Resume">
+                <button class="resume-btn">Download Resume</button> </a
+              ><br />
+              <a href="./assets/Matt_Fay(1).pdf" class="view-resume"
+                >view resume</a
+              >
+            </div>
+          </div>
+          <div class="row small-up-2 medium-up-3 large-up-4">
+            <div class="column">
+              <a
+                href="https://gohighbrow.com/portfolio/fundamentals-of-javascript/"
+                target="_blank"
+              >
+                <img
+                  class="thumbnail"
+                  src="./img/fundamentals_js.png"
+                  alt="JavaScript Course"
+                />
+              </a>
+              <h5>JavaScript Course</h5>
+              <p>
+                Highbrow is a platform which has been featured in the New York
+                Times, Inc. Magazine, and Business Insider, among others. I was
+                fortunate enough to have their team of editors review the 10
+                lessons and quiz I wrote, and agree to publish it on their
+                platform, introducing the course to 400k+ potential students!
+              </p>
+              <a href="#">PDF (since you're here:)</a> <br /><br />
+            </div>
+            <div class="column">
+              <a href="https://mettastoic.herokuapp.com" target="_blank">
+                <img class="thumbnail" src="./img/metta.png" alt="MettaStoic" />
+              </a>
+              <h5>MettaStoic</h5>
+              <p>
+                I just wanted to build a website, and during the middle of the
+                development, I decided I could actually do something more with
+                this. I started compiling some Ebooks to throw on the website so
+                that others may read them for free.
+              </p>
+            </div>
+            <div class="column">
+              <a href="https://intellsec.github.io" target="_blank">
+                <img
+                  class="thumbnail"
+                  src="./img/intellsec.png"
+                  alt="IntellSec"
+                />
+              </a>
+              <h5>IntellSec</h5>
+              <p>
+                A simple, static website, built after reading "Open Source
+                Intelligence Methods".
+              </p>
+              <a href="#">Source Code</a>
+            </div>
+            <div class="column">
+              <img
+                class="thumbnail"
+                src="./img/eudaimonia.png"
+                alt="Eudaimonia"
+              />
+              <h5>Eudaimonia</h5>
+              <p>
+                This project isn't yet published, but will be soon(hopefully by
+                the time anyone sees this).
+              </p>
+            </div>
+            <div class="column">
+              <a
+                href="https://github.com/username1001/fcc-forum-theme"
+                target="_blank"
+              >
+                <img
+                  class="thumbnail"
+                  src="./img/theme.png"
+                  alt="Theme Extension"
+                />
+              </a>
+              <h5>FCC Forum Theme</h5>
+              <p>
+                Found myself spending a lot of time on the freeCodeCamp forum.
+                There was no option to dim the lights, so this little extension
+                did that for me.
+              </p>
+              <a href="#">Source Code</a> <br /><br />
+            </div>
+            <div class="column">
+              <a
+                href="https://codepen.io/username1001/full/XjVWQO"
+                target="_blank"
+              >
+                <img
+                  class="thumbnail"
+                  src="./img/quotes.png"
+                  alt="Stoicism Quotes"
+                />
+              </a>
+              <h5>Stoicism Quotes</h5>
+              <p>
+                Really old project. Will replace soon with something similar,
+                but upgraded to my current skills.
+              </p>
+            </div>
+            <div class="column">
+              <img
+                class="thumbnail"
+                src="./img/old_port.png"
+                alt="Old Portfolio"
+                onclick="alert('This project is no longer around')"
+              />
+              <h5>Old Portfolio</h5>
+              <p>Just a filler.</p>
+            </div>
+            <div class="column">
+              <a href="https://young-lake-76391.herokuapp.com/" target="_blank">
+                <img
+                  class="thumbnail"
+                  src="./img/hn.png"
+                  alt="Hacker News API"
+                />
+              </a>
+              <h5>Hacker News API</h5>
+              <p>
+                A React project to learn more about the library. Doesn't use any
+                special packages; uses fetch() to retrieve data.
+              </p>
+              <a href="https://github.com/username1001/hackernews"
+                >Source Code</a
+              >
+            </div>
+            <div class="column">
+              <a href="https://liveanonymouschat.herokuapp.com" target="_blank">
+                <img class="thumbnail" src="./img/chat.png" alt="Live Chat" />
+              </a>
+              <h5>Anonymous Chat</h5>
+              <a href="https://github.com/username1001/chat">Source Code</a>
+            </div>
+          </div>
+          <hr />
+          <div class="row" id="contact">
+            <div class="medium-6 columns">
+              <h3>Contact Me</h3>
+              <p>
+                Get in touch with me by following the links below, filling in
+                the forum, or directly emailing me at: faymatt96@gmail.com
+              </p>
+              <ul class="menu">
+                <a href="https://www.linkedin.com/in/matt-fay" target="_blank">
+                  <i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i>
+                </a>
+                <a href="https://www.github.com/username1001" target="_blank">
+                  <i class="fa fa-github-square fa-3x" aria-hidden="true"></i>
+                </a>
+                <a href="https://www.codepen.io/username1001" target="_blank">
+                  <i class="fa fa-codepen fa-3x" aria-hidden="true"></i>
+                </a>
+              </ul>
+            </div>
+            <div class="medium-6 columns">
+              <label>
+                <p class="label-txt">Name</p>
+                <input type="text" placeholder="Name" />
+              </label>
+              <label>
+                <p class="label-txt">Email</p>
+                <input type="text" placeholder="Email" />
+              </label>
+              <label>
+                <p class="label-txt">Message</p>
+                <textarea placeholder="Write your message here..."></textarea>
+              </label>
+              <input
+                type="submit"
+                class="button expanded"
+                value="Submit"
+                id="submit"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-<div class="off-canvas-content" data-off-canvas-content>
-  <div class="title-bar hide-for-large">
-    <div class="title-bar-left">
-      <button class="menu-icon" type="button" data-open="my-info"></button>
-      <!-- <span class="title-bar-title"></span> -->
-    </div>
-  </div>
-<div class="callout primary" id="main">
-  <div class="row column">
-    <h1>Matt's Portfolio</h1>
-    <p>Software Developer | Scranton, PA</p>
-     <!-- <p class="lead"></p> -->
-     <a href="https://www.linkedin.com/in/matt-fay" target="_blank">
-      <i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i>
-    </a>
-    <a href="https://www.github.com/username1001" target="_blank">
-      <i class="fa fa-github-square fa-3x" aria-hidden="true"></i>
-    </a>
-    <a href="https://www.codepen.io/username1001" target="_blank">
-      <i class="fa fa-codepen fa-3x" aria-hidden="true"></i>
-   </a>
-   <br><br>
-    <a href="./assets/Matt_Fay(1).pdf" download="Matt's Resume">
-      <button class="resume-btn">Download Resume</button>
-    </a><br>
-    <a href="./assets/Matt_Fay(1).pdf" class="view-resume">view resume</a>
-  </div>
-</div>
-<div class="row small-up-2 medium-up-3 large-up-4">
-  <div class="column">
-    <a href="https://gohighbrow.com/portfolio/fundamentals-of-javascript/" target="_blank">
-      <img class="thumbnail" src="./img/fundamentals_js.png" alt="JavaScript Course">
-    </a>
-    <h5>JavaScript Course</h5>
-  </div>
-  <div class="column">
-    <a href="https://mettastoic.herokuapp.com" target="_blank">
-      <img class="thumbnail" src="./img/metta.png" alt="MettaStoic">
-    </a>
-      <h5>MettaStoic</h5>
-  </div>
-  <div class="column">
-    <a href="https://intellsec.github.io" target="_blank">
-      <img class="thumbnail" src="./img/intellsec.png" alt="IntellSec">
-    </a>
-    <h5>IntellSec</h5>
-  </div>
-  <div class="column">
-    <img class="thumbnail" src="./img/eudaimonia.png" alt="Eudaimonia">
-    <h5>Eudaimonia</h5>
-  </div>
-  <div class="column">
-    <a href="https://github.com/username1001/fcc-forum-theme" target="_blank">
-     <img class="thumbnail" src="./img/theme.png" alt="Theme Extension">
-    </a>
-    <h5>FCC Forum Theme</h5>
-  </div>
-  <div class="column">
-    <a href="https://codepen.io/username1001/full/XjVWQO" target="_blank">
-      <img class="thumbnail" src="./img/quotes.png" alt="Stoicism Quotes">
-    </a>
-    <h5>Stoicism Quotes</h5>
-  </div>
-  <div class="column">
-    <img class="thumbnail" src="./img/old_port.png" alt="Old Portfolio" onclick="alert('This project is no longer around')">
-    <h5>Old Portfolio</h5>
-  </div>
-  <div class="column">
-    <img class="thumbnail" src="./img/metta.png" alt="Godel Systems">
-    <h5>Godel Systems Inc.</h5>
-  </div>
-</div>
-<hr>
-<div class="row" id="contact">
-  <div class="medium-6 columns">
-    <h3>Contact Me</h3>
-    <p>Get in touch with me by following the links below, filling in the forum, or directly emailing me at: faymatt96@gmail.com</p>
-    <ul class="menu">
-      <a href="https://www.linkedin.com/in/matt-fay" target="_blank">
-        <i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i>
-      </a>
-      <a href="https://www.github.com/username1001" target="_blank">
-        <i class="fa fa-github-square fa-3x" aria-hidden="true"></i>
-      </a>
-      <a href="https://www.codepen.io/username1001" target="_blank">
-        <i class="fa fa-codepen fa-3x" aria-hidden="true"></i>
-     </a>
-   </ul>
-  </div>
-<div class="medium-6 columns">
-  <label>
-    <p class="label-txt">Name</p>
-    <input type="text" placeholder="Name">
-  </label>
-  <label>
-    <p class="label-txt">Email</p>
-    <input type="text" placeholder="Email">
-  </label>
-  <label>
-    <p class="label-txt">Message</p>
-    <textarea placeholder="Write your message here..."></textarea>
-  </label>
-  <input type="submit" class="button expanded" value="Submit" id="submit">
-  </div>
-</div>
-</div>
-</div>
-</div>
-<script src="./js/jquery-2.1.4.min.js"></script>
-<script src="./js/foundation.js"></script>
-<script>
+    <script src="./js/jquery-2.1.4.min.js"></script>
+    <script src="./js/foundation.js"></script>
+    <script>
       $(document).foundation();
     </script>
-</body>
+  </body>
 </html>
