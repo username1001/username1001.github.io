@@ -506,6 +506,17 @@ footer {
   cursor: default;
   font-size: 1.2em;
 }
+
+#extras {
+  background: #f2f2f5;
+  padding: 50px 15px;
+  border-bottom: 1px solid #dcd9d9;
+  text-align: center;
+}
+#extras h2 {
+  color: #374054;
+  margin-bottom: 50px;
+}
 #contact {
   padding: 50px 15px;
   background: #3498db;
