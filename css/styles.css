@@ -88,6 +88,11 @@ header.sticky {
   position: fixed;
   z-index: 999;
 }
+ul li { 
+  color: #74808a;
+font-size: 0.9em;
+margin: 0;
+}
 #menu.active {
   display: block;
 }
