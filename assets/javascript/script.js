@@ -7,7 +7,7 @@ $(document).ready(function () {
 
 /*------------------------------------- Designer Text Animation -------------------------------------*/
 firstText = "Developer";
-secondText = "Writer";
+secondText = "InfoSec";
 thridText = "Freelancer"
 fourthText = "Freelancer";
 fifthText = "Back-End Web Developer";
@@ -104,30 +104,6 @@ $(document).ready(function () {
     });
 });
 
-/*------------------------------------- Pop Videos -------------------------------------*/
-$(document).ready(function () {
-    $('#vimeo').magnificPopup({
-        items: {
-            src: 'https://vimeo.com/259411563'
-        },
-        type: 'iframe'
-    });
-
-    $('.youtube').magnificPopup({
-        items: {
-            src: 'https://www.youtube.com/watch?v=IMxDeACOWCE'
-        },
-        type: 'iframe'
-    });
-
-    $('.soundcloud').magnificPopup({
-        type: 'soundcloud',
-        items: {
-            src: 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/163522130&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true'
-        },
-        type: 'iframe',
-    });
-});
 
 /*------------------------------------- Gallary Fancy Box  -------------------------------------*/
 window.addEventListener("load", () => {
@@ -150,28 +126,28 @@ $('[data-fancybox="gallery"]').fancybox({
 });
 
 /*------------------------------------- Testimonial Slider -------------------------------------*/
-$(document).ready(function () {
-    $('.Testimonials').slick({
-        infinite: true,
-        slidesToShow: 2,
-        slidesToScroll: 1,
-        autoplay: true,
-        arrows: false,
-        dots: true,
-        speed: 1000,
-        responsive: [
-            {
-                breakpoint: 991,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    autoplay: true,
-                    arrows: false,
-                }
-            }
-        ]
-    });
-});
+// $(document).ready(function () {
+//     $('.Testimonials').slick({
+//         infinite: true,
+//         slidesToShow: 2,
+//         slidesToScroll: 1,
+//         autoplay: true,
+//         arrows: false,
+//         dots: true,
+//         speed: 1000,
+//         responsive: [
+//             {
+//                 breakpoint: 991,
+//                 settings: {
+//                     slidesToShow: 1,
+//                     slidesToScroll: 1,
+//                     autoplay: true,
+//                     arrows: false,
+//                 }
+//             }
+//         ]
+//     });
+// });
 
 /*------------------------------------- Form Input Animtion -------------------------------------*/
 $('input').focus(function () {
